@@ -30,6 +30,9 @@ export const dndCreateMarker = createAction(CREATE_MARKER_AT_POSITION, (token, v
 export const MOVE_PLAYER_MARKER = 'MOVE_PLAYER_MARKER'
 export const dndMovePlayerMarker = createAction(MOVE_PLAYER_MARKER, (uid) => ({ payload: { uid: uid } }))
 
+export const MOVE_VEHICLE_MARKER = 'MOVE_VEHICLE_MARKER'
+export const dndMoveVehicleMarker = createAction(MOVE_VEHICLE_MARKER, (uid) => ({ payload: { uid: uid } }))
+
 export const LOAD_MARKERS = Symbol('LOAD_MARKERS')
 export const loadMarkers = createAction(LOAD_MARKERS)
 
